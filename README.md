@@ -14,7 +14,7 @@ Any one available from Amazon with linux support should work but I have tried th
 2. Disable the default bluetooth service.  Note that I actually move the file to a backup location to make sure it doesnt come back after a reboot.
     * ```sudo systemctl stop bluetooth```
     * ```sudo systemctl disable bluetooth```
-    * ```sudo mv /usr/lib/bluetoothd bluetoothd.bak```
+    * ```sudo mv /usr/lib/bluetooth/bluetoothd bluetoothd.bak```
 3. Install the development requirements
     * ```sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev```
 4. Install NVVM to manager Node.js versions (Make sure to close and reopen your shell after this step)
